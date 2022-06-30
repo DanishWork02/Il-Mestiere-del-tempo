@@ -18,22 +18,124 @@ body {
 
 /* HERO SECTION */
 .upbar {
-  border: 1px yellow solid;
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 13px 15px;
+  background-color: #262c40;
 }
 
-.upbar .download p {
+.upbar .dropmenu .hamburger {
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.upbar .dropmenu .line {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  border-radius: 6px;
+}
+.upbar .dropmenu .sidebar {
+  border-right: 3px #d6a653 solid;
+  border-bottom: 3px #d6a653 solid;
+  position: fixed;
+  top: 45px;
+  left: 0px;
+  width: 80%;
+  height: 100vh;
+  background: #11172a;
+  z-index: 99;
+  display: none;
+  transition: display 2s ease;
+}
+
+.upbar .dropmenu .sidebar .menu {
+  border-bottom: 3px #d6a653 solid;
+}
+.upbar .dropmenu .sidebar .menu ul {
+  margin: 70px 40px 110px 40px;
+  list-style: none;
+}
+
+.upbar .dropmenu .sidebar .menu ul li a {
   font-family: "Montserrat";
   font-weight: 500;
+  font-size: 14px;
+  line-height: 29px;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.upbar .dropmenu .sidebar .menu ul li {
+  margin-bottom: 15px;
+}
+
+.upbar .dropmenu .sidebar .menu ul li:nth-child(1) a {
+  color: #8fa8ff;
+}
+
+.upbar .dropmenu .sidebar .bottom .titolo {
+  font-family: "Cinzel";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 30px 0px;
+  text-align: center;
+  background: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.upbar .dropmenu .sidebar .bottom .mail {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.upbar .dropmenu .sidebar .menu p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0px 10px 10px;
+
+  color: #ffffff;
+}
+
+.upbar .download a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: white;
   font-size: 13px;
   letter-spacing: 0.15em;
 }
 
 .main-video {
-  border: 2px solid purple;
   background: url(assets/Soffitta.jpg);
   background-size: cover;
   padding-bottom: 80px;
@@ -129,19 +231,21 @@ body {
 /* COVER SECTION */
 
 .cover {
-  border: 3px green solid;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: fixed;
+  top: 0px;
+  left: 0px;
+    background-color: var(--blue);
   animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
     opacity: 1;
@@ -167,7 +271,6 @@ body {
   opacity: 0.35;
   filter: blur(128px);
   transform: rotate(-90deg);
-  border: 2px white solid;
 }
 
 .elipse-dx {
@@ -214,12 +317,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 3px red solid;
 }
 
+.navigation-bar p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.12em;
+
+  color: #ffffff;
+}
 
 .navigation-bar .navigation {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -239,7 +350,7 @@ body {
 }
 
 .navigation-bar .navigation .current a {
-    text-decoration: none;
+  text-decoration: none;
   opacity: 0;
   transition: opacity 400ms ease;
   font-family: "Montserrat";
@@ -266,52 +377,51 @@ body {
       rgba(15, 18, 24, 0)
     )
     1;
-    color: #fff;
-    background: #0D1C2C;
+  color: #fff;
+  background: #0d1c2c;
 }
 
 #linea-1 {
   width: 100px;
   border-radius: 15px;
   height: 2px;
-  border: 2px #8FA8FF solid;
-  background-color: #8FA8FF;
+  border: 2px #8fa8ff solid;
+  background-color: #8fa8ff;
   transition: all ease 400ms;
 }
 
 #linea-2 {
-    width: 100px;
-    border-radius: 15px;
-    height: 2px;
-    border: 2px #585C69 solid;
-    background-color: #585C69;
-    transition: all ease 400ms;
-  }
+  width: 100px;
+  border-radius: 15px;
+  height: 2px;
+  border: 2px #585c69 solid;
+  background-color: #585c69;
+  transition: all ease 400ms;
+}
 
-  #linea-3 {
-    width: 100px;
-    border-radius: 15px;
-    height: 2px;
-    border: 2px #585C69 solid;
-    background-color: #585C69;
-    transition: all ease 400ms;
-  }
+#linea-3 {
+  width: 100px;
+  border-radius: 15px;
+  height: 2px;
+  border: 2px #585c69 solid;
+  background-color: #585c69;
+  transition: all ease 400ms;
+}
 
-  #linea-4 {
-    width: 100px;
-    border-radius: 15px;
-    height: 2px;
-    border: 2px #585C69 solid;
-    background-color: #585C69;
-    transition: all ease 400ms;
-  }
+#linea-4 {
+  width: 100px;
+  border-radius: 15px;
+  height: 2px;
+  border: 2px #585c69 solid;
+  background-color: #585c69;
+  transition: all ease 400ms;
+}
 
-  #linea-5 {
-    width: 100px;
-    border-radius: 15px;
-    height: 2px;
-    border: 2px #585C69 solid;
-    background-color: #585C69;
-    transition: all ease 400ms;
-  }
-
+#linea-5 {
+  width: 100px;
+  border-radius: 15px;
+  height: 2px;
+  border: 2px #585c69 solid;
+  background-color: #585c69;
+  transition: all ease 400ms;
+}

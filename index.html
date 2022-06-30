@@ -7,56 +7,39 @@
     <title>Il Mestiere del tempo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="navigation-bar">
-        <p>Jump to section:</p>
-        <div class="navigation">
-            <div class="current" onmouseover="onHover1(this)" onmouseout="onOut1(this)">
-                <a id="bottone-1" href="www.google.com">
-                    HOME
-                </a>
-                <div id="linea-1">
-                </div>
-            </div>
-            <div class="current" onmouseover="onHover2(this)" onmouseout="onOut2(this)">
-                <a id="bottone-2" href="www.google.com">
-                    THE PLOT
-                </a>
-                <div id="linea-2">
-                </div>
-            </div>
-            <div class="current" onmouseover="onHover3(this)" onmouseout="onOut3(this)">
-                <a id="bottone-3" href="www.google.com">
-                    THE PROJECT
-                </a>
-                <div id="linea-3">
-                </div>
-            </div>
-            <div class="current" onmouseover="onHover4(this)" onmouseout="onOut4(this)">
-                <a id="bottone-4" href="www.google.com">
-                    ABOUT US
-                </a>
-                <div id="linea-4">
-                </div>
-            </div>
-            <div class="current" onmouseover="onHover5(this)" onmouseout="onOut5(this)">
-                <a id="bottone-5" href="www.google.com">
-                    PARTECIPATE
-                </a>
-                <div id="linea-5">
-                </div>
-            </div>
-        </div>
-    </div>
-
+  <body id="bodyId">
     <div class="hero">
       <div class="upbar">
-        <div class="hamburger">ciao</div>
+        <div class="dropmenu">
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="sidebar" id="sidebar">
+            <div class="menu" >
+              <ul>
+                <li><a>HOME</a></li>
+                <li><a href="">THE PLOT</a></li>
+                <li><a href="">THE PROJECT</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">PARTECIPATE</a></li>
+              </ul>
+              <p>© 2022 - Specto Studio - All rights reserved</p>
+            </div>
+            <div class="bottom">
+              <p class="titolo">GET IN TOUCH:</p>
+              <a class="mail" href="mailto:sf@gmail.com"
+                ><p>hello@spectostudio.com</p></a
+              >
+            </div>
+          </div>
+        </div>
         <div class="download">
-          <p>DOWNLOADS</p>
+          <a href="www.dropbox.com" target="_blank">DOWNLOADS</a>
         </div>
       </div>
-      <div class="main-video" >
+      <div class="main-video">
         <div class="learn-more">LEARN MORE ></div>
         <div
           class="button"
@@ -94,103 +77,168 @@
       <div class="elipse-dx"></div>
     </div>
 
+    <div class="navigation-bar">
+      <p>Jump to section:</p>
+      <div class="navigation">
+        <div
+          class="current"
+          onmouseover="onHover1(this)"
+          onmouseout="onOut1(this)"
+        >
+          <a id="bottone-1" href="www.google.com"> HOME </a>
+          <div id="linea-1"></div>
+        </div>
+        <div
+          class="current"
+          onmouseover="onHover2(this)"
+          onmouseout="onOut2(this)"
+        >
+          <a id="bottone-2" href="www.google.com"> THE PLOT </a>
+          <div id="linea-2"></div>
+        </div>
+        <div
+          class="current"
+          onmouseover="onHover3(this)"
+          onmouseout="onOut3(this)"
+        >
+          <a id="bottone-3" href="www.google.com"> THE PROJECT </a>
+          <div id="linea-3"></div>
+        </div>
+        <div
+          class="current"
+          onmouseover="onHover4(this)"
+          onmouseout="onOut4(this)"
+        >
+          <a id="bottone-4" href="www.google.com"> ABOUT US </a>
+          <div id="linea-4"></div>
+        </div>
+        <div
+          class="current"
+          onmouseover="onHover5(this)"
+          onmouseout="onOut5(this)"
+        >
+          <a id="bottone-5" href="www.google.com"> PARTECIPATE </a>
+          <div id="linea-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
-        function onHover1(x){
-            let bottone =  document.getElementById('bottone-1')
-            let linea = document.getElementById("linea-1")
-            linea.style.transform = "translateY(8px)"
-            linea.style.height = "2px"
-            linea.style.width = "160px"
-            bottone.style.opacity = "1"
-            linea.style.border="1px solid #8FA8FF"
-        }
-        function onOut1(x){
-            let bottone =  document.getElementById('bottone-1')
-            let linea = document.getElementById("linea-1")
-            bottone.style.opacity = "0"
-            linea.style.width="100px"
-            linea.style.transform = "translateY(0px)"
-            linea.style.border="2px solid #8FA8FF"
-            bottone.style.opacity = "0"
-        }
-       
-        function onHover2(x){
-            let bottone =  document.getElementById('bottone-2')
-            let linea = document.getElementById("linea-2")
-            linea.style.transform = "translateY(8px)"
-            linea.style.height = "2px"
-            linea.style.width = "190px"
-            bottone.style.opacity = "1"
-            linea.style.border="1px solid #585C69"
-        }
-        function onOut2(x){
-            let bottone =  document.getElementById('bottone-2')
-            let linea = document.getElementById("linea-2")
-            bottone.style.opacity = "0"
-            linea.style.width="100px"
-            linea.style.transform = "translateY(0px)"
-            linea.style.border="2px solid #585C69"
-            bottone.style.opacity = "0"
-        }
+      function onHover1(x) {
+        let bottone = document.getElementById("bottone-1");
+        let linea = document.getElementById("linea-1");
+        linea.style.transform = "translateY(8px)";
+        linea.style.height = "2px";
+        linea.style.width = "160px";
+        bottone.style.opacity = "1";
+        linea.style.border = "1px solid #8FA8FF";
+      }
+      function onOut1(x) {
+        let bottone = document.getElementById("bottone-1");
+        let linea = document.getElementById("linea-1");
+        bottone.style.opacity = "0";
+        linea.style.width = "100px";
+        linea.style.transform = "translateY(0px)";
+        linea.style.border = "2px solid #8FA8FF";
+        bottone.style.opacity = "0";
+      }
 
-        function onHover3(x){
-            let bottone =  document.getElementById('bottone-3')
-            let linea = document.getElementById("linea-3")
-            linea.style.transform = "translateY(8px)"
-            linea.style.height = "2px"
-            linea.style.width = "230px"
-            bottone.style.opacity = "1"
-            linea.style.border="1px solid #585C69"
-        }
-        function onOut3(x){
-            let bottone =  document.getElementById('bottone-3')
-            let linea = document.getElementById("linea-3")
-            bottone.style.opacity = "0"
-            linea.style.width="100px"
-            linea.style.transform = "translateY(0px)"
-            linea.style.border="2px solid #585C69"
-            bottone.style.opacity = "0"
-        }
+      function onHover2(x) {
+        let bottone = document.getElementById("bottone-2");
+        let linea = document.getElementById("linea-2");
+        linea.style.transform = "translateY(8px)";
+        linea.style.height = "2px";
+        linea.style.width = "190px";
+        bottone.style.opacity = "1";
+        linea.style.border = "1px solid #585C69";
+      }
+      function onOut2(x) {
+        let bottone = document.getElementById("bottone-2");
+        let linea = document.getElementById("linea-2");
+        bottone.style.opacity = "0";
+        linea.style.width = "100px";
+        linea.style.transform = "translateY(0px)";
+        linea.style.border = "2px solid #585C69";
+        bottone.style.opacity = "0";
+      }
 
-        function onHover4(x){
-            let bottone =  document.getElementById('bottone-4')
-            let linea = document.getElementById("linea-4")
-            linea.style.transform = "translateY(8px)"
-            linea.style.height = "2px"
-            linea.style.width = "200px"
-            bottone.style.opacity = "1"
-            linea.style.border="1px solid #585C69"
-        }
-        function onOut4(x){
-            let bottone =  document.getElementById('bottone-4')
-            let linea = document.getElementById("linea-4")
-            bottone.style.opacity = "0"
-            linea.style.width="100px"
-            linea.style.transform = "translateY(0px)"
-            linea.style.border="2px solid #585C69"
-            bottone.style.opacity = "0"
-        }
+      function onHover3(x) {
+        let bottone = document.getElementById("bottone-3");
+        let linea = document.getElementById("linea-3");
+        linea.style.transform = "translateY(8px)";
+        linea.style.height = "2px";
+        linea.style.width = "230px";
+        bottone.style.opacity = "1";
+        linea.style.border = "1px solid #585C69";
+      }
+      function onOut3(x) {
+        let bottone = document.getElementById("bottone-3");
+        let linea = document.getElementById("linea-3");
+        bottone.style.opacity = "0";
+        linea.style.width = "100px";
+        linea.style.transform = "translateY(0px)";
+        linea.style.border = "2px solid #585C69";
+        bottone.style.opacity = "0";
+      }
 
-        function onHover5(x){
-            let bottone =  document.getElementById('bottone-5')
-            let linea = document.getElementById("linea-5")
-            linea.style.transform = "translateY(8px)"
-            linea.style.height = "2px"
-            linea.style.width = "230px"
-            bottone.style.opacity = "1"
-            linea.style.border="1px solid #585C69"
-        }
-        function onOut5(x){
-            let bottone =  document.getElementById('bottone-5')
-            let linea = document.getElementById("linea-5")
-            bottone.style.opacity = "0"
-            linea.style.width="100px"
-            linea.style.transform = "translateY(0px)"
-            linea.style.border="2px solid #585C69"
-            bottone.style.opacity = "0"
-        }
+      function onHover4(x) {
+        let bottone = document.getElementById("bottone-4");
+        let linea = document.getElementById("linea-4");
+        linea.style.transform = "translateY(8px)";
+        linea.style.height = "2px";
+        linea.style.width = "200px";
+        bottone.style.opacity = "1";
+        linea.style.border = "1px solid #585C69";
+      }
+      function onOut4(x) {
+        let bottone = document.getElementById("bottone-4");
+        let linea = document.getElementById("linea-4");
+        bottone.style.opacity = "0";
+        linea.style.width = "100px";
+        linea.style.transform = "translateY(0px)";
+        linea.style.border = "2px solid #585C69";
+        bottone.style.opacity = "0";
+      }
+
+      function onHover5(x) {
+        let bottone = document.getElementById("bottone-5");
+        let linea = document.getElementById("linea-5");
+        linea.style.transform = "translateY(8px)";
+        linea.style.height = "2px";
+        linea.style.width = "230px";
+        bottone.style.opacity = "1";
+        linea.style.border = "1px solid #585C69";
+      }
+      function onOut5(x) {
+        let bottone = document.getElementById("bottone-5");
+        let linea = document.getElementById("linea-5");
+        bottone.style.opacity = "0";
+        linea.style.width = "100px";
+        linea.style.transform = "translateY(0px)";
+        linea.style.border = "2px solid #585C69";
+        bottone.style.opacity = "0";
+      }
 
       setTimeout(myTimeout1, 4700);
+
+
+      let boolSidebar = false
+      
+      function toggleMenu(){
+        if(boolSidebar == false){
+            document.getElementById("sidebar").style.display = "block"
+            document.getElementById("bodyId").style.overflowY = "hidden"
+            boolSidebar = true
+            
+        } else {
+            document.getElementById("sidebar").style.display = "none"
+            document.getElementById("bodyId").style.overflowY = "scroll"
+            boolSidebar = false
+        }
+       
+      }
+
       function myTimeout1() {
         document.getElementById("cover-div").style.display = "none";
       }
