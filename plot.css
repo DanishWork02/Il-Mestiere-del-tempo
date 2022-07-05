@@ -52,6 +52,144 @@ body {
   transform: rotate(-180deg);
 }
 
+.upbarMini {
+  display: none;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 13px 15px;
+  background-color: #262c40;
+}
+
+.upbarMini .dropmenu .hamburger {
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.upbarMini .dropmenu .line {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  border-radius: 6px;
+}
+.upbarMini .dropmenu .sidebar {
+  border-right: 3px #d6a653 solid;
+  border-bottom: 3px #d6a653 solid;
+  position: fixed;
+  top: 45px;
+  left: 0px;
+  width: 80%;
+  height: 100vh;
+  background: #11172a;
+  z-index: 99;
+  display: none;
+  transition: display 2s ease;
+}
+
+.upbarMini .dropmenu .sidebar .menu {
+  border-bottom: 3px #d6a653 solid;
+}
+.upbarMini .dropmenu .sidebar .menu ul {
+  margin: 70px 40px 110px 40px;
+  list-style: none;
+}
+
+.upbarMini .dropmenu .sidebar .menu ul li a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 29px;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.upbarMini .dropmenu .sidebar .menu ul li {
+  margin-bottom: 15px;
+}
+
+.upbarMini .dropmenu .sidebar .menu ul li:nth-child(1) a {
+  color: #8fa8ff;
+}
+
+.upbarMini .dropmenu .sidebar .bottom .titolo {
+  font-family: "Cinzel";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 30px 0px;
+  text-align: center;
+  background: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.upbarMini .dropmenu .sidebar .bottom .mail {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.upbarMini .dropmenu .sidebar .menu p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0px 10px 10px;
+
+  color: #ffffff;
+}
+
+.upbarMini .download a {
+  text-decoration: none;
+  font-family: "Cinzel";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  /* or 170% */
+
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  /* GOLD SHADE */
+
+  background: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .upbar {
   display: flex;
   flex-direction: row;
@@ -109,8 +247,10 @@ body {
   border-style: solid;
   border-image: linear-gradient(
       0deg,
-      rgb(231, 186, 72), rgba(242, 187, 90, 0.8768), rgba(191, 122, 0, 0.75),
-        rgba(232, 165, 49, 0.164)
+      rgb(231, 186, 72),
+      rgba(242, 187, 90, 0.8768),
+      rgba(191, 122, 0, 0.75),
+      rgba(232, 165, 49, 0.164)
     )
     1;
   color: #fff;
@@ -601,4 +741,79 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navigation-bar-up {
+    display: none;
+  }
+  .upbar{
+    padding: 0px 15px;
+  }
+  .upbarMini{
+    display: flex;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .header img{
+    width: 80%;
+    margin: 20px 0px 40px 0px;
+  }
+  .header .testo{
+    width: 90%;
+    margin: 0px 5%;
+  }
+  .header .testo p{
+    font-size: 13px;
+  }
+
+  .main{
+    
+    flex-direction: column;
+    margin:  40px 5%;
+    width: 90%;
+  }
+  .main .testo{
+    padding: 0px;
+    width: 100%;
+  }
+
+  .main .immagini .simpleParallax{
+    display: none;
+  }
+
+  .main .immagini .immagini{
+    display: none;
+  }
+  .main .immagini .foto{
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  .surface-div{
+    margin: 50px 5%;
+    width: 90%;
+  }
+
+  .paolo-sacerdoti{
+    flex-direction: column;
+    width: 90%;
+    margin: 50px 5%;
+  }
+  .paolo-sacerdoti image{
+    width: 300px;
+  }
+  .paolo-sacerdoti p{
+    margin: 30px 0px;
+  }
+  .navigation-bar{
+    display: none;
+  }
+  .bottomBig{
+    display: none;
+  }
 }

@@ -7,8 +7,38 @@
     <title>The Plot</title>
     <link rel="stylesheet" href="plot.css">
 </head>
-<body>
-    <div class="upbar" >
+<body id="bodyId">
+  <div class="upbarMini">
+    <div class="dropmenu">
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <div class="sidebar" id="sidebar">
+        <div class="menu">
+          <ul>
+            <li><a>HOME</a></li>
+            <li><a href="plot.html">THE PLOT</a></li>
+            <li><a href="project.html">THE PROJECT</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="participate.html">PARTICIPATE</a></li>
+          </ul>
+          <p>© 2022 - Specto Studio - All rights reserved</p>
+        </div>
+        <div class="bottom">
+          <p class="titolo">GET IN TOUCH:</p>
+          <a class="mail" href="mailto:sf@gmail.com"
+            ><p>hello@spectostudio.com</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="download">
+      <a>MESTIERE DEL TEMPO</a>
+    </div>
+  </div>
+    <div class="upbar">
         <div class="learn-more"><a href="index.html">< HOME</a></div>
         <div class="navigation-bar-up">
           <div class="navigation">
@@ -182,6 +212,19 @@ It’s a deeply universal story of the inherent fragility and <span style="color
       <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
     <script>
+       let boolSidebar = false;
+
+function toggleMenu() {
+  if (boolSidebar == false) {
+    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("bodyId").style.overflowY = "hidden";
+    boolSidebar = true;
+  } else {
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("bodyId").style.overflowY = "scroll";
+    boolSidebar = false;
+  }
+}
                 let image = document.getElementById('glasso')
                 new simpleParallax(image, {
           delay: .6,

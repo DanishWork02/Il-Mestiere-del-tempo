@@ -11,7 +11,37 @@
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
 </head>
-<body onclick="chiudiMusic()">
+<body onclick="chiudiMusic()" id="bodyId">
+  <div class="upbarMini">
+    <div class="dropmenu">
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <div class="sidebar" id="sidebar">
+        <div class="menu">
+          <ul>
+            <li><a>HOME</a></li>
+            <li><a href="plot.html">THE PLOT</a></li>
+            <li><a href="project.html">THE PROJECT</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="participate.html">PARTICIPATE</a></li>
+          </ul>
+          <p>© 2022 - Specto Studio - All rights reserved</p>
+        </div>
+        <div class="bottom">
+          <p class="titolo">GET IN TOUCH:</p>
+          <a class="mail" href="mailto:sf@gmail.com"
+            ><p>hello@spectostudio.com</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="download">
+      <a>MESTIERE DEL TEMPO</a>
+    </div>
+  </div>
     <div class="upbar" >
         <div class="learn-more"><a href="index.html">< THE PLOT</a></div>
         <div class="navigation-bar-up">
@@ -250,6 +280,19 @@ Through a delicate balance of cutting-edge technology, intimate performance, and
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
+       let boolSidebar = false;
+
+function toggleMenu() {
+  if (boolSidebar == false) {
+    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("bodyId").style.overflowY = "hidden";
+    boolSidebar = true;
+  } else {
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("bodyId").style.overflowY = "scroll";
+    boolSidebar = false;
+  }
+}
       var modal = document.getElementById('music-layer')
       var open = document.getElementById("music-button")
 
