@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participate</title>
+    <link rel="stylesheet" href="participate.css">
+</head>
+<body>
+    <div class="upbar" >
+        <div class="learn-more"><a href="project.html">< ABOUT US</a></div>
+        <div class="navigation-bar-up">
+           <div class="navigation">
+              <div
+                 class="current"
+                 onmouseover="onHover1up(this)"
+                 onmouseout="onOut1up(this)"
+                 >
+                 <div id="linea-1up"></div>
+                 <a id="bottone-1up" href="index.html"> HOME </a>
+              </div>
+              <div
+                 class="current"
+                 onmouseover="onHover2up(this)"
+                 onmouseout="onOut2up(this)"
+                 >
+                 <div id="linea-2up"></div>
+                 <a id="bottone-2up" href="plot.html"> THE PLOT </a>
+              </div>
+              <div
+                 class="current"
+                 onmouseover="onHover3up(this)"
+                 onmouseout="onOut3up(this)"
+                 >
+                 <div id="linea-3up"></div>
+                 <a id="bottone-3up" href="project.html"> THE PROJECT </a>
+              </div>
+              <div
+                 class="current"
+                 onmouseover="onHover4up(this)"
+                 onmouseout="onOut4up(this)"
+                 >
+                 <div id="linea-4up"></div>
+                 <a id="bottone-4up" href="about.html"> ABOUT US </a>
+              </div>
+              <div
+                 class="current"
+                 onmouseover="onHover5up(this)"
+                 onmouseout="onOut5up(this)"
+                 >
+                 <div id="linea-5up"></div>
+                 <a id="bottone-5up" href="participate.html"> PARTICIPATE </a>
+              </div>
+           </div>
+        </div>
+        <div class="learn-more" style="opacity: 0;"><a href="" >PARTICIPATE ></THE></a></div>
+     </div>
+     <div class="header" style="margin-bottom: 80px;">
+        <h1>Participate</h1>
+        <p>There are <span class="sottolineatura1">no spectators</span> in Il Mestiere del Tempo.</p>
+        <p style="margin-top: 30px;"><span style="color: #8FA8FF;">FOR PRODUCERS:</span><br>
+            Offer your audience a <span class="sottolineatura2">transformative theatre experience</span> by being the first to develop and deliver a fully-immersive live-cinema production. The production’s agile approach to theatre size, orchestral arrangement, and interactive exhibition spaces enable you to scale the entire production ecosystem to your vision, budget, and theatre.</p>
+        <p style="margin-top: 30px;"><span style="color: #8FA8FF;">FOR SPONSORS:</span><br>
+            Investing in Il Mestiere del Tempo is not simply an opportunity to fund this production as a bystander. It’s an opportunity <span class="sottolineatura3">to become part of a whirlwind artistic</span> journey, empowering you to cement your vision and play an integral role in a groundbreaking project.
+            </p>
+        
+           </div>
+           <h1 class="scroll-down-title">scroll  down to learn more</h1>
+      <div class="scroll-down">
+         <div class="barra" onmouseover="abbassaPalla()" onmouseout="alzaPalla()">
+            <div class="ball" id="ball">
+            </div>
+         </div>
+      </div>
+      <div class="sponsor">
+        <img src="assets/Ellipse.png" alt="" srcset="">
+        <img src="assets/Ellipse.png" alt="" srcset="">
+        <img src="assets/Ellipse.png" alt="" srcset="">
+        <img src="assets/Ellipse.png" alt="" srcset="">
+      </div>
+      <p class="didascalia">All trademarks, logos and brand names are the property of their respective owners.</p>
+      <p class="contact-p">Contact us to learn more about the project or become a partner.</p>
+
+      <button class="mail-button"><a href="mailto:danidsh@gmail.com" target="_blank">Get In Touch</a></button> 
+      <div class="navigation-bar" style="margin-top: 100px;">
+        <div class="navigation">
+           <div
+              class="current"
+              onmouseover="onHover1(this)"
+              onmouseout="onOut1(this)"
+              >
+              <a id="bottone-1" href="index.html"> HOME </a>
+              <div id="linea-1"></div>
+           </div>
+           <div
+              class="current"
+              onmouseover="onHover2(this)"
+              onmouseout="onOut2(this)"
+              >
+              <a id="bottone-2" href="plot.html"> THE PLOT </a>
+              <div id="linea-2"></div>
+           </div>
+           <div
+              class="current"
+              onmouseover="onHover3(this)"
+              onmouseout="onOut3(this)"
+              >
+              <a id="bottone-3" href="project.html"> THE PROJECT </a>
+              <div id="linea-3"></div>
+           </div>
+           <div
+              class="current"
+              onmouseover="onHover4(this)"
+              onmouseout="onOut4(this)"
+              >
+              <a id="bottone-4" href="about.html"> ABOUT US </a>
+              <div id="linea-4"></div>
+           </div>
+           <div
+              class="current"
+              onmouseover="onHover5(this)"
+              onmouseout="onOut5(this)"
+              >
+              <a id="bottone-5" href="participate.html"> PARTICIPATE </a>
+              <div id="linea-5"></div>
+           </div>
+        </div>
+     </div>
+     <div class="bottomBig">
+        <p class="titolo">GET IN TOUCH:</p>
+        <a class="mail" href="mailto:sf@gmail.com"
+           >
+           <p>hello@spectostudio.com</p>
+        </a
+           >
+        <p class="copyright">© 2022 - Specto Studio<br>All rights reserved</p>
+     </div>  
+     <div class="elipse-sx"></div>
+      <div class="elipse-dx"></div>
+     <script>
+function abbassaPalla(){
+             document.getElementById('ball').style.transform = "translateY(50px)"
+         }
+         function alzaPalla(){
+             document.getElementById('ball').style.transform = "translateY(0px)"
+         }
+         function onHover1up(x) {
+         let bottone = document.getElementById("bottone-1up");
+         let linea = document.getElementById("linea-1up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "160px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut1up(x) {
+         let bottone = document.getElementById("bottone-1up");
+         let linea = document.getElementById("linea-1up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover2up(x) {
+         let bottone = document.getElementById("bottone-2up");
+         let linea = document.getElementById("linea-2up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "190px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut2up(x) {
+         let bottone = document.getElementById("bottone-2up");
+         let linea = document.getElementById("linea-2up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover3up(x) {
+         let bottone = document.getElementById("bottone-3up");
+         let linea = document.getElementById("linea-3up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut3up(x) {
+         let bottone = document.getElementById("bottone-3up");
+         let linea = document.getElementById("linea-3up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover4up(x) {
+         let bottone = document.getElementById("bottone-4up");
+         let linea = document.getElementById("linea-4up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "200px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut4up(x) {
+         let bottone = document.getElementById("bottone-4up");
+         let linea = document.getElementById("linea-4up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover5up(x) {
+         let bottone = document.getElementById("bottone-5up");
+         let linea = document.getElementById("linea-5up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #8fa8ff";
+         }
+         function onOut5up(x) {
+         let bottone = document.getElementById("bottone-5up");
+         let linea = document.getElementById("linea-5up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #8fa8ff";
+         bottone.style.opacity = "0";
+         }
+         
+         
+         function onHover1(x) {
+         let bottone = document.getElementById("bottone-1");
+         let linea = document.getElementById("linea-1");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "160px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut1(x) {
+         let bottone = document.getElementById("bottone-1");
+         let linea = document.getElementById("linea-1");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover2(x) {
+         let bottone = document.getElementById("bottone-2");
+         let linea = document.getElementById("linea-2");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "190px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut2(x) {
+         let bottone = document.getElementById("bottone-2");
+         let linea = document.getElementById("linea-2");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover3(x) {
+         let bottone = document.getElementById("bottone-3");
+         let linea = document.getElementById("linea-3");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut3(x) {
+         let bottone = document.getElementById("bottone-3");
+         let linea = document.getElementById("linea-3");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover4(x) {
+         let bottone = document.getElementById("bottone-4");
+         let linea = document.getElementById("linea-4");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "200px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut4(x) {
+         let bottone = document.getElementById("bottone-4");
+         let linea = document.getElementById("linea-4");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover5(x) {
+         let bottone = document.getElementById("bottone-5");
+         let linea = document.getElementById("linea-5");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #8fa8ff";
+         }
+         function onOut5(x) {
+         let bottone = document.getElementById("bottone-5");
+         let linea = document.getElementById("linea-5");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #8fa8ff";
+         bottone.style.opacity = "0";
+         }
+         
+     </script>
+</body>
+</html>

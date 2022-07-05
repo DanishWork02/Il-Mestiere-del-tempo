@@ -17,13 +17,13 @@
             <div class="line"></div>
           </div>
           <div class="sidebar" id="sidebar">
-            <div class="menu" >
+            <div class="menu">
               <ul>
                 <li><a>HOME</a></li>
                 <li><a href="">THE PLOT</a></li>
                 <li><a href="">THE PROJECT</a></li>
                 <li><a href="">ABOUT US</a></li>
-                <li><a href="">PARTECIPATE</a></li>
+                <li><a href="">PARTICIPATE</a></li>
               </ul>
               <p>© 2022 - Specto Studio - All rights reserved</p>
             </div>
@@ -39,8 +39,9 @@
           <a href="www.dropbox.com" target="_blank">DOWNLOADS</a>
         </div>
       </div>
+     
       <div class="main-video">
-        <div class="learn-more">LEARN MORE ></div>
+        <div class="learn-more"><a href="plot.html">LEARN MORE ></a></div>
         <div
           class="button"
           style="
@@ -50,7 +51,7 @@
             padding: 90px 0px;
           "
         >
-          <button>PLAY VIDEO</button>
+          <button onclick="apriPopupVideo()">PLAY VIDEO</button>
         </div>
         <div
           class="titolo"
@@ -76,6 +77,11 @@
       <div class="elipse-sx"></div>
       <div class="elipse-dx"></div>
     </div>
+    <div class="video-popup" id="video-popup">
+      <button onclick="apriPopupVideo2()">X</button>
+
+      <iframe title="vimeo-player"  src="https://player.vimeo.com/video/586843140?h=ce1d24ac05" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <div class="navigation-bar">
       <p>Jump to section:</p>
@@ -85,7 +91,7 @@
           onmouseover="onHover1(this)"
           onmouseout="onOut1(this)"
         >
-          <a id="bottone-1" href="www.google.com"> HOME </a>
+          <a id="bottone-1" href="#"> HOME </a>
           <div id="linea-1"></div>
         </div>
         <div
@@ -93,7 +99,7 @@
           onmouseover="onHover2(this)"
           onmouseout="onOut2(this)"
         >
-          <a id="bottone-2" href="www.google.com"> THE PLOT </a>
+          <a id="bottone-2" href="plot.html"> THE PLOT </a>
           <div id="linea-2"></div>
         </div>
         <div
@@ -101,7 +107,7 @@
           onmouseover="onHover3(this)"
           onmouseout="onOut3(this)"
         >
-          <a id="bottone-3" href="www.google.com"> THE PROJECT </a>
+          <a id="bottone-3" href="project.html"> THE PROJECT </a>
           <div id="linea-3"></div>
         </div>
         <div
@@ -109,7 +115,7 @@
           onmouseover="onHover4(this)"
           onmouseout="onOut4(this)"
         >
-          <a id="bottone-4" href="www.google.com"> ABOUT US </a>
+          <a id="bottone-4" href="about.html"> ABOUT US </a>
           <div id="linea-4"></div>
         </div>
         <div
@@ -117,14 +123,29 @@
           onmouseover="onHover5(this)"
           onmouseout="onOut5(this)"
         >
-          <a id="bottone-5" href="www.google.com"> PARTECIPATE </a>
+          <a id="bottone-5" href="participate.html"> PARTICIPATE </a>
           <div id="linea-5"></div>
         </div>
       </div>
     </div>
 
+    <div class="bottomBig">
+      <p class="titolo">GET IN TOUCH:</p>
+      <a class="mail" href="mailto:sf@gmail.com"
+        ><p>hello@spectostudio.com</p></a
+      >
+      <p class="copyright">© 2022 - Specto Studio<br>All rights reserved</p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
+     
+      function apriPopupVideo(){
+        document.getElementById('video-popup').style.display = "flex"
+      }
+      function apriPopupVideo2(){
+        document.getElementById('video-popup').style.display = "none"
+      }
       function onHover1(x) {
         let bottone = document.getElementById("bottone-1");
         let linea = document.getElementById("linea-1");
@@ -222,27 +243,24 @@
 
       setTimeout(myTimeout1, 4700);
 
+      let boolSidebar = false;
 
-      let boolSidebar = false
-      
-      function toggleMenu(){
-        if(boolSidebar == false){
-            document.getElementById("sidebar").style.display = "block"
-            document.getElementById("bodyId").style.overflowY = "hidden"
-            boolSidebar = true
-            
+      function toggleMenu() {
+        if (boolSidebar == false) {
+          document.getElementById("sidebar").style.display = "block";
+          document.getElementById("bodyId").style.overflowY = "hidden";
+          boolSidebar = true;
         } else {
-            document.getElementById("sidebar").style.display = "none"
-            document.getElementById("bodyId").style.overflowY = "scroll"
-            boolSidebar = false
+          document.getElementById("sidebar").style.display = "none";
+          document.getElementById("bodyId").style.overflowY = "scroll";
+          boolSidebar = false;
         }
-       
       }
 
       function myTimeout1() {
         document.getElementById("cover-div").style.display = "none";
       }
     </script>
-    <script src="app.js"></script>
+    
   </body>
 </html>

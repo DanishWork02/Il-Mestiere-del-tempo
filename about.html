@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About Us</title>
+      <link rel="stylesheet" href="about.css">
+   </head>
+   <body>
+      <div class="upbar" >
+         <div class="learn-more"><a href="project.html">< THE PROJECT</a></div>
+         <div class="navigation-bar-up">
+            <div class="navigation">
+               <div
+                  class="current"
+                  onmouseover="onHover1up(this)"
+                  onmouseout="onOut1up(this)"
+                  >
+                  <div id="linea-1up"></div>
+                  <a id="bottone-1up" href="index.html"> HOME </a>
+               </div>
+               <div
+                  class="current"
+                  onmouseover="onHover2up(this)"
+                  onmouseout="onOut2up(this)"
+                  >
+                  <div id="linea-2up"></div>
+                  <a id="bottone-2up" href="plot.html"> THE PLOT </a>
+               </div>
+               <div
+                  class="current"
+                  onmouseover="onHover3up(this)"
+                  onmouseout="onOut3up(this)"
+                  >
+                  <div id="linea-3up"></div>
+                  <a id="bottone-3up" href="project.html"> THE PROJECT </a>
+               </div>
+               <div
+                  class="current"
+                  onmouseover="onHover4up(this)"
+                  onmouseout="onOut4up(this)"
+                  >
+                  <div id="linea-4up"></div>
+                  <a id="bottone-4up" href="about.html"> ABOUT US </a>
+               </div>
+               <div
+                  class="current"
+                  onmouseover="onHover5up(this)"
+                  onmouseout="onOut5up(this)"
+                  >
+                  <div id="linea-5up"></div>
+                  <a id="bottone-5up" href="participate.html"> PARTICIPATE </a>
+               </div>
+            </div>
+         </div>
+         <div class="learn-more"><a href="participate.html">PARTICIPATE ></THE></a></div>
+      </div>
+      <div class="header">
+         <h1>ABOUT US: SPECTO STUDIO</h1>
+         <p>Specto Studio is a <span class="sottolineatura1">non-profit company</span> based in Milan with a strong focus on developing cutting-edge innovation within the field of cultural production, theatre, and live entertainment. </p>
+      </div>
+      <div class="team">
+         <h1>MEET THE TEAM</h1>
+         <div class="container">
+            <div class="card" onclick="openPopup1()">
+               <div class="ruolo">Writer & Director</div>
+               <div class="nome">Paolo Sacerdoti</div>
+            </div>
+            <div class="card" onclick="openPopup2()">
+               <div class="ruolo">Composer & Musical Director</div>
+               <div class="nome">Fabrizio Campanelli</div>
+            </div>
+            <div class="card" onclick="openPopup3()">
+               <div class="ruolo">Costume Designer</div>
+               <div class="nome">Xander Smith</div>
+            </div>
+            <div class="card" onclick="openPopup4()">
+               <div class="ruolo">Recording Orchestra</div>
+               <div class="nome">Czech National Symphony</div>
+            </div>
+         </div>
+      </div>
+      <div class="more-information" id="popup1">
+         <div class="testo">
+            <h1>Paolo Sacerdoti</h1>
+            <h2>Writer & director</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+         </div>
+         <img src="assets/paolo.png" alt="" srcset="">
+         <button onclick="chiudiPopup1()">X</button>
+      </div>
+      <div class="more-information" id="popup2">
+         <div class="testo">
+            <h1>Fabrizio Campanelli</h1>
+            <h2>Composer & Musical Director</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+         </div>
+         <img src="assets/fabrizio.png" alt="" srcset="">
+         <button onclick="chiudiPopup2()">X</button>
+      </div>
+      <div class="more-information" id="popup3">
+         <div class="testo">
+            <h1>Xander Smith</h1>
+            <h2>Costume Designer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+         </div>
+         <img src="assets/xander.png" alt="" srcset="">
+         <button onclick="chiudiPopup3()">X</button>
+      </div>
+      <div class="more-information" id="popup4">
+         <div class="testo">
+            <h1>Czech National Symphony</h1>
+            <h2>Recording Orchestra</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+         </div>
+         <img src="assets/czech.png" alt="" srcset="">
+         <button onclick="chiudiPopup4()">X</button>
+      </div>
+      <h1 class="scroll-down-title">scroll  down to learn more</h1>
+      <div class="scroll-down">
+         <div class="barra" onmouseover="abbassaPalla()" onmouseout="alzaPalla()">
+            <div class="ball" id="ball">
+            </div>
+         </div>
+      </div>
+      <div class="header">
+         <h2>SPECTO STUDIO</h2>
+         <p>
+            Specto Studio promotes the values of <span style="color: #8FA8FF;">innovation, and interdisciplinary and creative freedom</span> by championing the development and production of superior-quality contents and ground-breaking formats. Encouraging collaboration between established artists and young creators, Specto Studio brings together a wide array of disciplines including <span style="color: #8FA8FF;">directing, set design, costume design, and music composition</span>.
+            <br><br>
+            Owing to these objectives and tenets, Specto Studio has earned the status of <span style="color: #8FA8FF;">social enterprise</span>. This is a title that identifies activities dedicated to the creation of value of general interest and with civic and social utility purposes.
+            <br><br>
+            As a non-profit company, all fundraising achieved through sponsorships, grants, or revenues are <span style="color: #8FA8FF;">entirely reinvested</span> into the development of forward-thinking projects and the visions of masterful artists whose purpose aligns with the Specto Studio’s ethos and mission.
+         </p>
+      </div>
+      <div class="navigation-bar" style="margin-top: 100px;">
+         <div class="navigation">
+            <div
+               class="current"
+               onmouseover="onHover1(this)"
+               onmouseout="onOut1(this)"
+               >
+               <a id="bottone-1" href="index.html"> HOME </a>
+               <div id="linea-1"></div>
+            </div>
+            <div
+               class="current"
+               onmouseover="onHover2(this)"
+               onmouseout="onOut2(this)"
+               >
+               <a id="bottone-2" href="plot.html"> THE PLOT </a>
+               <div id="linea-2"></div>
+            </div>
+            <div
+               class="current"
+               onmouseover="onHover3(this)"
+               onmouseout="onOut3(this)"
+               >
+               <a id="bottone-3" href="project.html"> THE PROJECT </a>
+               <div id="linea-3"></div>
+            </div>
+            <div
+               class="current"
+               onmouseover="onHover4(this)"
+               onmouseout="onOut4(this)"
+               >
+               <a id="bottone-4" href="about.html"> ABOUT US </a>
+               <div id="linea-4"></div>
+            </div>
+            <div
+               class="current"
+               onmouseover="onHover5(this)"
+               onmouseout="onOut5(this)"
+               >
+               <a id="bottone-5" href="participate.html"> PARTICIPATE </a>
+               <div id="linea-5"></div>
+            </div>
+         </div>
+      </div>
+      <div class="bottomBig">
+         <p class="titolo">GET IN TOUCH:</p>
+         <a class="mail" href="mailto:sf@gmail.com"
+            >
+            <p>hello@spectostudio.com</p>
+         </a
+            >
+         <p class="copyright">© 2022 - Specto Studio<br>All rights reserved</p>
+      </div>
+      <div class="elipse-sx"></div>
+      <div class="elipse-dx"></div>
+      <script>
+         function abbassaPalla(){
+             document.getElementById('ball').style.transform = "translateY(50px)"
+         }
+         function alzaPalla(){
+             document.getElementById('ball').style.transform = "translateY(0px)"
+         }
+         
+         function openPopup1(){
+             document.getElementById('popup1').style.display="flex"
+         }
+         function openPopup2(){
+             document.getElementById('popup2').style.display="flex"
+         }
+         function openPopup3(){
+             document.getElementById('popup3').style.display="flex"
+         }
+         function openPopup4(){
+             document.getElementById('popup4').style.display="flex"
+         }
+         
+         function chiudiPopup1(){
+             document.getElementById('popup1').style.display="none"
+         }
+         function chiudiPopup2(){
+             document.getElementById('popup2').style.display="none"
+         }
+         function chiudiPopup3(){
+             document.getElementById('popup3').style.display="none"
+         }
+         function chiudiPopup4(){
+             document.getElementById('popup4').style.display="none"
+         }
+         
+         function onHover1up(x) {
+         let bottone = document.getElementById("bottone-1up");
+         let linea = document.getElementById("linea-1up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "160px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut1up(x) {
+         let bottone = document.getElementById("bottone-1up");
+         let linea = document.getElementById("linea-1up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover2up(x) {
+         let bottone = document.getElementById("bottone-2up");
+         let linea = document.getElementById("linea-2up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "190px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut2up(x) {
+         let bottone = document.getElementById("bottone-2up");
+         let linea = document.getElementById("linea-2up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover3up(x) {
+         let bottone = document.getElementById("bottone-3up");
+         let linea = document.getElementById("linea-3up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut3up(x) {
+         let bottone = document.getElementById("bottone-3up");
+         let linea = document.getElementById("linea-3up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover4up(x) {
+         let bottone = document.getElementById("bottone-4up");
+         let linea = document.getElementById("linea-4up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "200px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #8fa8ff";
+         }
+         function onOut4up(x) {
+         let bottone = document.getElementById("bottone-4up");
+         let linea = document.getElementById("linea-4up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #8fa8ff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover5up(x) {
+         let bottone = document.getElementById("bottone-5up");
+         let linea = document.getElementById("linea-5up");
+         linea.style.transform = "translateY(-8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #585C69";
+         }
+         function onOut5up(x) {
+         let bottone = document.getElementById("bottone-5up");
+         let linea = document.getElementById("linea-5up");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #585C69";
+         bottone.style.opacity = "0";
+         }
+         
+         
+         function onHover1(x) {
+         let bottone = document.getElementById("bottone-1");
+         let linea = document.getElementById("linea-1");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "160px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut1(x) {
+         let bottone = document.getElementById("bottone-1");
+         let linea = document.getElementById("linea-1");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover2(x) {
+         let bottone = document.getElementById("bottone-2");
+         let linea = document.getElementById("linea-2");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "190px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut2(x) {
+         let bottone = document.getElementById("bottone-2");
+         let linea = document.getElementById("linea-2");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover3(x) {
+         let bottone = document.getElementById("bottone-3");
+         let linea = document.getElementById("linea-3");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #fff";
+         }
+         function onOut3(x) {
+         let bottone = document.getElementById("bottone-3");
+         let linea = document.getElementById("linea-3");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #fff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover4(x) {
+         let bottone = document.getElementById("bottone-4");
+         let linea = document.getElementById("linea-4");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "200px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #8fa8ff";
+         }
+         function onOut4(x) {
+         let bottone = document.getElementById("bottone-4");
+         let linea = document.getElementById("linea-4");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #8fa8ff";
+         bottone.style.opacity = "0";
+         }
+         
+         function onHover5(x) {
+         let bottone = document.getElementById("bottone-5");
+         let linea = document.getElementById("linea-5");
+         linea.style.transform = "translateY(8px)";
+         linea.style.height = "2px";
+         linea.style.width = "230px";
+         bottone.style.opacity = "1";
+         linea.style.border = "1px solid #585C69";
+         }
+         function onOut5(x) {
+         let bottone = document.getElementById("bottone-5");
+         let linea = document.getElementById("linea-5");
+         bottone.style.opacity = "0";
+         linea.style.width = "100px";
+         linea.style.transform = "translateY(0px)";
+         linea.style.border = "2px solid #585C69";
+         bottone.style.opacity = "0";
+         }
+         
+      </script>
+   </body>
+</html>
