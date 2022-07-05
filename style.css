@@ -505,4 +505,8 @@ body {
   .navigation-bar{
     display: none;
   }
+  .titolo-cover {
+    font-size: 56px;
+    margin: 0px 20px;
+  }
 }
