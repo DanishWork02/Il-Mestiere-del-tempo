@@ -453,8 +453,18 @@ body {
   border: none;
   position: absolute;
   top: 8px;
-  transition: all 400ms ease;
+  animation: movimentoPallina 2s ease infinite;
 }
+
+@keyframes movimentoPallina  {
+  50%{
+    transform: translateY(20px); 
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
 
 .scroll-down-title {
   font-family: "Montserrat";
@@ -685,15 +695,28 @@ body {
 
 .music-layer {
   background-color: rgba(17, 23, 42, 1);
-  border-radius: 20px;
   width: 70%;
   padding: 70px 5%;
   z-index: 199;
-  position: absolute;
-  top: 170px;
+  position: fixed;
+  top: 100px;
+  right: 20px;
   margin: 0px 15%;
+  height: 80vh;
   /* border: 1px solid rgb(11, 14, 27); */
   display: none;
+  overflow-y: scroll;
+  z-index: 9999999;
+}
+
+.cover-layer{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -9999;
+  background-color:rgba(17, 23, 42, 0.78)
 }
 
 .show-music {
@@ -721,13 +744,29 @@ body {
   text-fill-color: transparent;
 }
 
+#button-chiudi{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  font-family: "montserrat";
+  color: goldenrod;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color: #060e15;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .music-layer p {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 15px;
   margin-top: 10px;
   line-height: 34px;
-  /* or 189% */
+  overflow-y: ;
 
   letter-spacing: 0.15em;
 

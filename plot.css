@@ -487,7 +487,16 @@ body {
   border: none;
   position: absolute;
   top: 8px;
-  transition: all 400ms ease;
+  animation: movimentoPallina 2s ease infinite;
+}
+
+@keyframes movimentoPallina  {
+  50%{
+    transform: translateY(20px); 
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 
 .scroll-down-title {

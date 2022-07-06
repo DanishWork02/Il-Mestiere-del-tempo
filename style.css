@@ -39,7 +39,7 @@ body {
 .upbar .dropmenu .line {
   width: 26px;
   height: 3px;
-  background-color: white;
+  background-color: #262c40;
   border-radius: 6px;
 }
 .upbar .dropmenu .sidebar {
@@ -208,6 +208,7 @@ body {
 }
 
 .main-video .button button {
+  cursor: pointer;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 21px;
@@ -474,6 +475,7 @@ body {
 }
 
 .video-popup {
+  z-index: 999999;
   position: relative;
   position: fixed;
   top: 60px;
@@ -487,6 +489,7 @@ body {
 }
 
 .video-popup button {
+  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 30px;
@@ -501,6 +504,16 @@ body {
   font-size: 18px;
 }
 
+.cover-layer{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -9999;
+  background-color:rgba(17, 23, 42, 0.78)
+}
+
 @media screen and (max-width:900px) {
   .navigation-bar{
     display: none;
@@ -508,5 +521,17 @@ body {
   .titolo-cover {
     font-size: 56px;
     margin: 0px 20px;
+  }
+  .upbar .dropmenu .line{
+    background-color: white;
+  }
+}
+
+@media screen and (min-width:1800px){
+  
+  .bottomBig{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
   }
 }

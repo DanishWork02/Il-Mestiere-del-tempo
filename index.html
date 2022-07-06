@@ -79,8 +79,8 @@
     </div>
     <div class="video-popup" id="video-popup">
       <button onclick="apriPopupVideo2()">X</button>
-
-      <iframe title="vimeo-player"  src="https://player.vimeo.com/video/586843140?h=ce1d24ac05" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+      <!--<button id="playbtn">playy</button>-->
+      <video preload="" controls id="videoTag" src="assets/videoplayback.mp4" width="640" height="360" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="navigation-bar">
@@ -137,14 +137,25 @@
       <p class="copyright">© 2022 - Specto Studio<br>All rights reserved</p>
     </div>
 
+    <div class="cover-layer" id="cover-layer">
+      
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
+
+    
+
      
       function apriPopupVideo(){
         document.getElementById('video-popup').style.display = "flex"
+        document.getElementById('cover-layer').style.zIndex = 9999
+
       }
       function apriPopupVideo2(){
         document.getElementById('video-popup').style.display = "none"
+        document.getElementById('cover-layer').style.zIndex = -9999
+        document.getElementById('videoTag').pause()
       }
       function onHover1(x) {
         let bottone = document.getElementById("bottone-1");
