@@ -18,7 +18,7 @@
              <div class="sidebar" id="sidebar">
              <div class="menu">
                <ul>
-                 <li><a>HOME</a></li>
+                 <li><a href="index.html">HOME</a></li>
                  <li><a href="plot.html">THE PLOT</a></li>
                  <li><a href="project.html">THE PROJECT</a></li>
                  <li><a href="about.html">ABOUT US</a></li>
@@ -221,6 +221,9 @@
       </div>
       <div class="elipse-sx"></div>
       <div class="elipse-dx"></div>
+      <div class="cover-layer" id="cover-layer">
+      
+      </div>
       <script>
          let boolSidebar = false;
 
@@ -235,48 +238,50 @@ function toggleMenu() {
     boolSidebar = false;
   }
 }
-         function abbassaPalla(){
-             document.getElementById('ball').style.transform = "translateY(50px)"
-         }
-         function alzaPalla(){
-             document.getElementById('ball').style.transform = "translateY(0px)"
-         }
          
          function openPopup1(){
              document.getElementById('popup1').style.display="flex"
              document.getElementById("bodyId").style.overflowY = "hidden";
+             document.getElementById('cover-layer').style.zIndex = 9999
          }
          function openPopup2(){
              document.getElementById('popup2').style.display="flex"
              document.getElementById("bodyId").style.overflowY = "hidden";
+             document.getElementById('cover-layer').style.zIndex = 9999
          }
          function openPopup3(){
              document.getElementById('popup3').style.display="flex"
              document.getElementById("bodyId").style.overflowY = "hidden";
+             document.getElementById('cover-layer').style.zIndex = 9999
          }
          function openPopup4(){
              document.getElementById('popup4').style.display="flex"
              document.getElementById("bodyId").style.overflowY = "hidden";
+             document.getElementById('cover-layer').style.zIndex = 9999
          }
          
          function chiudiPopup1(){
              document.getElementById('popup1').style.display="none"
              document.getElementById("bodyId").style.overflowY = "scroll";
+             document.getElementById('cover-layer').style.zIndex = -9999
 
          }
          function chiudiPopup2(){
              document.getElementById('popup2').style.display="none"
              document.getElementById("bodyId").style.overflowY = "scroll";
+             document.getElementById('cover-layer').style.zIndex = -9999
 
          }
          function chiudiPopup3(){
              document.getElementById('popup3').style.display="none"
              document.getElementById("bodyId").style.overflowY = "scroll";
+             document.getElementById('cover-layer').style.zIndex = -9999
 
          }
          function chiudiPopup4(){
              document.getElementById('popup4').style.display="none"
              document.getElementById("bodyId").style.overflowY = "scroll";
+             document.getElementById('cover-layer').style.zIndex = -9999
 
          }
          

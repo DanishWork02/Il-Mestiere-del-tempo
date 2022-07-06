@@ -388,19 +388,24 @@ body {
   left: 0px;
 }
 
-.header button {
+.header p{
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.header #music-button {
   cursor: pointer;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 14px;
+  border: 2px red solid;
+  background-color: rebeccapurple;
   /* identical to box height, or 250% */
 
-  text-align: justify;
+  /*text-align: justify;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   padding: 15px 30px;
-
-  /* Gold Linear */
 
   background: none;
   color: rgba(192, 133, 29, 1);
@@ -415,8 +420,9 @@ body {
     1;
   color: #c0851d;
   background: none;
+  padding: 40px;
   margin-top: 50px;
-  margin-left: 67%;
+  margin-left: 67%;*/
 }
 
 .scroll-down {

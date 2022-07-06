@@ -525,6 +525,12 @@ body {
   .upbar .dropmenu .line{
     background-color: white;
   }
+  .video-popup{
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+  }
 }
 
 @media screen and (min-width:1800px){

@@ -700,9 +700,8 @@ body {
   }
   
   .sponsor {
-    border: 2px red solid;
     overflow-x: scroll;
-    
+
   }
   .upbar {
     padding: 0px 15px;

@@ -776,9 +776,7 @@ body {
     width: 90%;
     margin: 0px 5%;
   }
-  .header .testo p{
-    font-size: 13px;
-  }
+  
 
   .main{
     
@@ -813,8 +811,8 @@ body {
     width: 90%;
     margin: 50px 5%;
   }
-  .paolo-sacerdoti image{
-    width: 300px;
+  .paolo-sacerdoti img{
+    width: 270px;
   }
   .paolo-sacerdoti p{
     margin: 30px 0px;
